@@ -33,7 +33,7 @@ SELECT
 	v.cantidad,
 	v.fecha_venta
 FROM productos AS p
-RIGHT JOIN entas AS V
+RIGHT JOIN ventas AS V
 ON p.producto_id = v.producto_id
 WHERE p.producto_id IS NULL
 
