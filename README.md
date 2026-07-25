@@ -1,9 +1,6 @@
--- 1. ¿Por qué usaste LEFT JOIN para la Consulta 1 y no INNER JOIN? ¿Qué se perdería si usaras INNER JOIN?
--- Utilicé LEFT JOIN porque la idea era partir de la tabla productos y asegurarme de que aparezcan todos 
--- los productos del catálogo, incluso aquellos que nunca tuvieron una venta.
--- Si hubiera usado un INNER JOIN, solo se mostrarían los productos que tienen una coincidencia en la tabla ventas. 
--- En este caso, se perderían los productos 108 (Hub USB-C 7p) y 109 (Parlante Bluetooth), ya que nunca fueron vendidos 
--- y no tienen registros asociados en la tabla ventas.
+1. ¿Por qué usaste LEFT JOIN para la Consulta 1 y no INNER JOIN? ¿Qué se perdería si usaras INNER JOIN?
+Utilicé LEFT JOIN porque la idea era partir de la tabla productos y asegurarme de que aparezcan todos los productos del catálogo, incluso aquellos que nunca tuvieron una venta.
+Si hubiera usado un INNER JOIN, solo se mostrarían los productos que tienen una coincidencia en la tabla ventas. En este caso, se perderían los productos 108 (Hub USB-C 7p) y 109 (Parlante Bluetooth), ya que nunca fueron vendidos y no tienen registros asociados en la tabla ventas.
 
 
 -- 2. ¿Por qué usaste RIGHT JOIN para la Consulta 2? ¿Qué tabla está a la izquierda y cuál a la derecha en tu consulta?
